@@ -113,6 +113,7 @@ set completeopt=menu,preview
 " vim-go
 let g:go_bin_path = expand($GOPATH."/bin")
 let g:go_fmt_command = "goimports"
+au FileType go setlocal sw=4 ts=4 sts=4 noet
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
 au FileType go nmap <Leader>gv <Plug>(go-doc-vertical)
