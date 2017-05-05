@@ -128,4 +128,3 @@ eval "$(pyenv init -)"
 # golang
 export GOPATH="$HOME/.go"
 export PATH="$GOPATH/bin:$PATH"
-

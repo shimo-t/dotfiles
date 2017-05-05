@@ -20,4 +20,3 @@ init                           Setup environment settings
 install                        Run make deploy, init
 list                           Show dotfiles in this repo
 ```
-

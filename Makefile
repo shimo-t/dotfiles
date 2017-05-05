@@ -28,4 +28,3 @@ clean: ## Remove the dotfiles and this repo
 	@echo 'Remove dotfiles in your home directory...'
 	@-$(foreach val, $(DOTFILES), rm -vrf $(HOME)/$(val);)
 	-rm -rf $(DOTPATH)
-
