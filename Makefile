@@ -1,6 +1,6 @@
 DOTPATH    := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
-CANDIDATES := $(wildcard .??*)
-EXCLUSIONS := .DS_Store .git .gitignore
+CANDIDATES := $(wildcard .??*) $(wildcard .config/??*/??*)
+EXCLUSIONS := .DS_Store .git .gitignore .config
 DOTFILES   := $(filter-out $(EXCLUSIONS), $(CANDIDATES))
 
 .PHONY: help list deploy init clean
