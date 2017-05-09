@@ -1,0 +1,9 @@
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+on_i = 1
+hook_add = 'source ~/.vim/plugins/neocomplete.vim'
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+hook_add = 'source ~/.vim/plugins/go-vim.vim'
