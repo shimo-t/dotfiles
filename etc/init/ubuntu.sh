@@ -31,6 +31,13 @@ if ! which tmux > /dev/null 2>&1; then
     sudo apt-get install tmux
 fi
 
+# fish and fisherman
+if ! which fish > /dev/null 2>&1; then
+    sudo apt-get install fish
+    curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+    echo "fisher z" | fish
+fi
+
 # pyenv
 if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
