@@ -16,12 +16,6 @@ brew install git
 brew install tmux
 brew install ffmpeg
 
-# neobundle
-if [ ! -d ~/.vim/bundle/neobundle.vim ]; then
-     mkdir -p $HOME/.vim/bundle
-     git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
-fi
-
 # pyenv
 if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv

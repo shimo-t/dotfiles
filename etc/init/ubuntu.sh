@@ -26,12 +26,6 @@ if ! which vim > /dev/null 2>&1; then
     sudo apt-get install vim vim-gnome
 fi
 
-# neobundle
-if [ ! -d ~/.vim/bundle/neobundle.vim ]; then
-     mkdir -p $HOME/.vim/bundle
-     git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
-fi
-
 # tmux
 if ! which tmux > /dev/null 2>&1; then
     sudo apt-get install tmux
