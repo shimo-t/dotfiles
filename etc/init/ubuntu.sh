@@ -31,6 +31,12 @@ if ! which tmux > /dev/null 2>&1; then
     sudo apt-get install tmux
 fi
 
+# peco
+if ! which peco > /dev/null 2>&1; then
+  curl -sL 'https://github.com/peco/peco/releases/download/v0.5.1/peco_linux_amd64.tar.gz' | \
+  sudo tar xz -C /usr/local/bin --strip=1 --wildcards '*/peco' --no-same-owner --no-same-permissions
+fi
+
 # fish and fisherman
 if ! which fish > /dev/null 2>&1; then
     sudo apt-get install fish

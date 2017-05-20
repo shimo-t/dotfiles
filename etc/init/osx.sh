@@ -14,6 +14,7 @@ brew install tree
 
 brew install git
 brew install tmux
+brew install peco
 brew install ffmpeg
 
 brew install fish
