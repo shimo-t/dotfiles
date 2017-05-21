@@ -13,6 +13,9 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
+repo = 'Shougo/unite-outline'
+
+[[plugins]]
 repo = 'tyru/caw.vim'
 hook_add = 'source ~/.vim/plugins/caw.vim'
 
