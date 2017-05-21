@@ -17,6 +17,10 @@ repo = 'altercation/vim-colors-solarized'
 hook_add = 'source ~/.vim/plugins/solarized.vim'
 
 [[plugins]]
+repo = 'vim-scripts/vim-auto-save'
+hook_add = 'source ~/.vim/plugins/auto-save.vim'
+
+[[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]

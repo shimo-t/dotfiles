@@ -3,6 +3,7 @@ set encoding=utf-8
 set showmode
 set showcmd
 
+set updatetime=100
 set autoread
 set autowrite
 
