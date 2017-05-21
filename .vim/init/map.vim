@@ -37,7 +37,7 @@ cnoremap <C-e> <End>
 
 " windows
 nnoremap s <Nop>
-nnoremap sp :<C-u>split<CR>
+nnoremap ss :<C-u>split<CR>
 nnoremap sv :<C-u>vsplit<CR>
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
