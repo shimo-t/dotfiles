@@ -1,11 +1,11 @@
 #!/bin/bash
-sudo apt-get update
+sudo apt update
 
 # git
 if ! which git > /dev/null 2>&1; then
     sudo add-apt-repository ppa:git-core/ppa -y
-    sudo apt-get update
-    sudo apt-get install git
+    sudo apt update
+    sudo apt install git
 fi
 
 # solarized colorscheme for gnome terminal
@@ -18,22 +18,22 @@ fi
 
 # golang
 if ! which go > /dev/null 2>&1; then
-    sudo apt-get install golang -y
+    sudo apt install golang -y
 fi
 
 # vim
 if ! which vim > /dev/null 2>&1; then
-    sudo apt-get install vim vim-gnome
+    sudo apt install vim vim-gnome
 fi
 
 # vim
 if ! which ag > /dev/null 2>&1; then
-    sudo apt-get install silversearcher-ag
+    sudo apt install silversearcher-ag
 fi
 
 # tmux
 if ! which tmux > /dev/null 2>&1; then
-    sudo apt-get install tmux
+    sudo apt install tmux
 fi
 
 # peco
@@ -44,7 +44,7 @@ fi
 
 # fish and fisherman
 if ! which fish > /dev/null 2>&1; then
-    sudo apt-get install fish
+    sudo apt install fish
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
     echo "fisher z" | fish
 fi
