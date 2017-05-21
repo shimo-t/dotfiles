@@ -40,13 +40,10 @@ nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l
 nnoremap sh <C-w>h
-nnoremap sJ <C-w>J
-nnoremap sK <C-w>K
-nnoremap sL <C-w>L
-nnoremap sH <C-w>H
 
 " tabpage
-nnoremap t <Nop>
-nnoremap th gt
-nnoremap tl gT
-nnoremap tt :<C-u>tabnew<CR>
+nnoremap sf gt
+nnoremap sb gT
+nnoremap sn gt
+nnoremap sp gT
+nnoremap st :<C-u>tabnew<CR>
