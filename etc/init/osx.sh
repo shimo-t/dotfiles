@@ -16,6 +16,7 @@ brew install git
 brew install tmux
 brew install peco
 brew install ffmpeg
+brew install the_silver_searcher
 
 brew install fish
 

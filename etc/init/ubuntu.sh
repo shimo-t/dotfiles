@@ -26,6 +26,11 @@ if ! which vim > /dev/null 2>&1; then
     sudo apt-get install vim vim-gnome
 fi
 
+# vim
+if ! which ag > /dev/null 2>&1; then
+    sudo apt-get install silversearcher-ag
+fi
+
 # tmux
 if ! which tmux > /dev/null 2>&1; then
     sudo apt-get install tmux
