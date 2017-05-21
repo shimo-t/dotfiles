@@ -9,6 +9,10 @@ hook_add = 'source ~/.vim/plugins/unite.vim'
 repo = 'Shougo/neomru.vim'
 
 [[plugins]]
+repo = 'tyru/caw.vim'
+hook_add = 'source ~/.vim/plugins/caw.vim'
+
+[[plugins]]
 repo = 'altercation/vim-colors-solarized'
 
 [[plugins]]
