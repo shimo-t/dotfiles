@@ -5,5 +5,5 @@ if &compatible
   set nocompatible
 endif
 
-runtime! dein/*.vim
 runtime! init/*.vim
+runtime! dein/*.vim
