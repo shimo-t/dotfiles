@@ -9,8 +9,15 @@
 [alias]
     al = config --get-regexp alias
     me = config --get-regexp user
+    s = status --short --branch
     st = status
+    ci = commit
+    br = branch
+    co = checkout
+    d = diff
+    dc = diff --cached
     l = log --decorate --oneline
     ls = log --decorate --oneline --stat
     lg = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
     cancel = reset --soft HEAD^
+    unstage = reset HEAD --
