@@ -5,14 +5,14 @@ This repository contains my dotfiles for OSX / Ubuntu.
 ## Install
 
 ```
-$git clone https://github.com/shimo-t/dofiles $HOME/dotfiles
-$cd $HOME/dotfiles
+$ git clone https://github.com/shimo-t/dofiles $HOME/dotfiles
+$ cd $HOME/dotfiles
 ```
 
 ## Makefile
 
 ```
-$make help
+$ make help
 clean                          Remove the dotfiles and this repo
 deploy                         Create symlink to home directory
 help                           Self-documented Makefile
