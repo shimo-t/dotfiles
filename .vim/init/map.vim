@@ -3,6 +3,9 @@ let mapleader = "\<Space>"
 noremap <Leader>h ^
 noremap <Leader>l $
 
+nnoremap : ;
+nnoremap ; :
+
 inoremap jj <Esc>
 inoremap <C-j> <Esc>
 vnoremap <C-j> <ESC>
