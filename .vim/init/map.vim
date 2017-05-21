@@ -1,4 +1,4 @@
-let g:mapleader = ','
+let mapleader = "\<Space>"
 
 inoremap jj <Esc>
 inoremap <C-j> <Esc>
