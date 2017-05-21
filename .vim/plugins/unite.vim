@@ -1,7 +1,7 @@
 "let g:unite_enable_start_insert = 1
 
 nnoremap [unite] <Nop>
-nmap <Space>u [unite]
+nmap <Leader>u [unite]
 
 nnoremap <silent> [unite]u :<C-u>Unite file_mru buffer<CR>
 nnoremap <silent> [unite]f :<C-u>UniteWithCurrentDir -buffer-name=files file<CR>
