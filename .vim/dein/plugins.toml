@@ -20,15 +20,18 @@ repo = 'tyru/caw.vim'
 hook_add = 'source ~/.vim/plugins/caw.vim'
 
 [[plugins]]
-repo = 'altercation/vim-colors-solarized'
-hook_add = 'source ~/.vim/plugins/solarized.vim'
-
-[[plugins]]
-repo = 'vim-scripts/vim-auto-save'
-hook_add = 'source ~/.vim/plugins/auto-save.vim'
-
-[[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+hook_add = 'source ~/.vim/plugins/airline.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+hook_add = 'source ~/.vim/plugins/airline-themes.vim'
+
+[[plugins]]
+repo = 'dracula/vim'

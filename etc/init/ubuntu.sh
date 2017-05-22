@@ -8,12 +8,11 @@ if ! which git > /dev/null 2>&1; then
     sudo apt install git
 fi
 
-# solarized colorscheme for gnome terminal
+# dracula colorscheme for gnome terminal
 if [ ! -d  ~/.dir_colors ]; then
-    git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git $HOME/gnome-terminal-colors-solarized
-    $HOME/gnome-terminal-colors-solarized/install.sh --install-dircolors
-    rm -rf $HOME/gnome-terminal-colors-solarized
-    rm $DOTPATH/dircolors
+    git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula $HOME/gnome-terminal-colors-dracula
+    $HOME/gnome-terminal-colors-dracula/install.sh
+    rm -rf $HOME/gnome-terminal-colors-dracula
 fi
 
 # golang
@@ -26,7 +25,7 @@ if ! which vim > /dev/null 2>&1; then
     sudo apt install vim vim-gnome
 fi
 
-# vim
+# ag
 if ! which ag > /dev/null 2>&1; then
     sudo apt install silversearcher-ag
 fi
@@ -46,10 +45,21 @@ fi
 if ! which fish > /dev/null 2>&1; then
     sudo apt install fish
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher z" | fish
+    echo "fisher install z omf/theme-agnoster" | fish
 fi
 
 # pyenv
 if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+fi
+
+# powerline
+if ! which powerline-daemon > /dev/null 2>&1; then
+    pyenv install miniconda2-4.1.11
+    pyenv global miniconda2-4.1.11
+    pip install --user powerline-status
+
+    git clone https://github.com/powerline/fonts.git $HOME/fonts
+    $HOME/fonts/install.sh
+    rm -rf $HOME/fonts
 fi
