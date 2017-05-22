@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt update
+sudo apt install xsel xclip
 
 # git
 if ! which git > /dev/null 2>&1; then

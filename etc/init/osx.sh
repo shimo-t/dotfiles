@@ -17,6 +17,7 @@ brew install tmux
 brew install peco
 brew install ffmpeg
 brew install the_silver_searcher
+brew install reattach-to-user-namespace
 
 brew install fish
 
