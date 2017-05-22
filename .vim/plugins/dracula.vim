@@ -1,1 +1,2 @@
-colorschema dracula
+set t_Co=256
+colorscheme dracula

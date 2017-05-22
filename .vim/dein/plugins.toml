@@ -35,3 +35,4 @@ hook_add = 'source ~/.vim/plugins/airline-themes.vim'
 
 [[plugins]]
 repo = 'dracula/vim'
+hook_add = 'source ~/.vim/plugins/dracula.vim'
