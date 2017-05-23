@@ -5,5 +5,9 @@ if &compatible
   set nocompatible
 endif
 
-runtime! init/*.vim
+augroup MyAutoCmd
+  autocmd!
+augroup END
+
 runtime! dein/*.vim
+runtime! init/*.vim
