@@ -3,6 +3,7 @@
 *.swp
 *.pyc
 *.ipynb_checkpoints
+.python-version
 *.pkl
 *.h5
 .cache/*
