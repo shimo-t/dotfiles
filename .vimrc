@@ -9,5 +9,5 @@ augroup MyAutoCmd
   autocmd!
 augroup END
 
-runtime! dein/*.vim
 runtime! init/*.vim
+runtime! dein/*.vim
