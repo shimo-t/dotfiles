@@ -18,6 +18,7 @@ formulas=(
     ffmpeg
     the_silver_searcher
     reattach-to-user-namespace
+    perl-build
 )
 
 for formula in "${formulas[@]}"; do
