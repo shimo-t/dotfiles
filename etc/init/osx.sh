@@ -9,20 +9,30 @@ fi
 
 brew update
 
-brew install coreutils
-brew install tree
+formulas=(
+    coreutils
+    tree
+    git
+    tmux
+    peco
+    ffmpeg
+    the_silver_searcher
+    reattach-to-user-namespace
+)
 
-brew install git
-brew install tmux
-brew install peco
-brew install ffmpeg
-brew install the_silver_searcher
-brew install reattach-to-user-namespace
+for formula in "${formulas[@]}"; do
+    if ! which $formula > /dev/null 2>&1; then
+        brew install $formula
+    fi
+done
 
-brew install fish
+# fish
+if ! which fish > /dev/null 2>&1; then
+    brew install fish
 
-curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-echo "fisher install z omf/theme-agnoster" | fish
+    curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+    echo "fisher install z omf/theme-agnoster" | fish
+fi
 
 # pyenv
 if [ ! -d ~/.pyenv ]; then
