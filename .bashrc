@@ -125,6 +125,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# plenv
+export PLENV_ROOT="$HOME/.plenv"
+export PATH="$PLENV_ROOT/bin:$PATH"
+eval "$(plenv init -)"
+
 # golang
 export GOPATH="$HOME/.go"
 export PATH="$GOPATH/bin:$PATH"

@@ -14,6 +14,11 @@ set -x PYENV_ROOT $HOME/.pyenv
 set -x PATH $PYENV_ROOT/bin $PATH
 . (pyenv init - | psub)
 
+# for plenv
+set -x PLENV_ROOT $HOME/.plenv
+set -x PATH $PLENV_ROOT/bin $PATH
+. (plenv init - | psub)
+
 # peco
 function peco_select_history
   if test (count $argv) = 0

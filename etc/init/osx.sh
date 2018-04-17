@@ -39,6 +39,11 @@ if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 fi
 
+# plenv
+if [ ! -d ~/.plenv ]; then
+    git clone https://github.com/tokuhirom/plenv.git $HOME/.plenv
+fi
+
 # powerline
 if ! which powerline-daemon > /dev/null 2>&1; then
     pyenv install miniconda2-4.1.11
