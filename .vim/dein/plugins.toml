@@ -32,7 +32,3 @@ hook_add = 'source ~/.vim/plugins/airline.vim'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 hook_add = 'source ~/.vim/plugins/airline-themes.vim'
-
-[[plugins]]
-repo = 'dracula/vim'
-hook_add = 'autocmd MyAutoCmd VimEnter * nested colorscheme dracula'
