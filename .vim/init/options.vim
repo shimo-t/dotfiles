@@ -69,7 +69,7 @@ set laststatus=2
 set ruler
 
 " Show cursor line
-set cursorline
+" set cursorline
 
 " Use clipboard
 set clipboard=unnamed
