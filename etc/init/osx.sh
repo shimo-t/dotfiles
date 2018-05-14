@@ -14,7 +14,8 @@ formulas=(
     tree
     git
     tmux
-    peco
+    # peco
+    fzf
     ffmpeg
     the_silver_searcher
     reattach-to-user-namespace
@@ -32,7 +33,7 @@ if ! which fish > /dev/null 2>&1; then
     brew install fish
 
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher install z omf/theme-agnoster" | fish
+    echo "fisher install z fzf" | fish
 fi
 
 # pyenv

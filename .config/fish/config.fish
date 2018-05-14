@@ -3,39 +3,5 @@ set fish_greeting
 . $HOME/.config/fish/env.fish
 . $HOME/.config/fish/aliases.fish
 
-# peco
-function peco_select_history
-  if test (count $argv) = 0
-    set peco_flags
-  else
-    set peco_flags --query "$argv"
-  end
-
-  history | peco $peco_flags | read foo
-
-  if [ $foo ]
-    commandline $foo
-  else
-    commandline ''
-  end
-end
-
-function peco_z
-  set -l query (commandline)
-
-  if test -n $query
-    set peco_flags --query "$query"
-  end
-
-  z -l | peco $peco_flags | awk '{ print $2 }' | read recent
-  if [ $recent ]
-    cd $recent
-    commandline -r ''
-    commandline -f repaint
-  end
-end
-
 function fish_user_key_bindings
-  bind \cr peco_select_history
-  bind \x1b peco_z
 end
