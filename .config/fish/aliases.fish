@@ -19,11 +19,3 @@ function zf
     z -l | fzf +s | awk '{print $2}' | read -l recent; and cd $recent
   end
 end
-
-function hf
-  if count $argv > /dev/null
-    history | fzf -1 +s -q $argv[1] | read -l recent; and commandline $recent
-  else
-    history | fzf +s | read -l recent; and commandline $recent
-  end
-end
