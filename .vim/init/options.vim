@@ -79,3 +79,6 @@ set number
 
 " History size
 set history=10000
+
+" fzf
+set rtp+=/usr/local/opt/fzf

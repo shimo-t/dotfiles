@@ -2,18 +2,8 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'Shougo/unite.vim'
-hook_add = 'source ~/.vim/plugins/unite.vim'
-
-[[plugins]]
-repo = 'Shougo/neomru.vim'
-
-[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
-
-[[plugins]]
-repo = 'Shougo/unite-outline'
 
 [[plugins]]
 repo = 'tyru/caw.vim'
@@ -32,3 +22,13 @@ hook_add = 'source ~/.vim/plugins/airline.vim'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 hook_add = 'source ~/.vim/plugins/airline-themes.vim'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --bin'
+merged = '0'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = 'source ~/.vim/plugins/fzf.vim'
