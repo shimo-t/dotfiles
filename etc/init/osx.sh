@@ -33,7 +33,7 @@ if ! which fish > /dev/null 2>&1; then
     brew install fish
 
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher install z fzf" | fish
+    echo "fisher install z fzf git_util" | fish
 fi
 
 # pyenv
