@@ -13,6 +13,7 @@ set -gx FZF_DEFAULT_OPTS '--height 50% --reverse'
 set -gx FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 # set -gx FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -g ""'
 set -gx FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
+set -gx FZF_REVERSE_ISEARCH_OPTS '--no-sort'
 
 # for python
 set -gx PYENV_ROOT $HOME/.pyenv
