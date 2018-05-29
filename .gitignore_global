@@ -6,5 +6,6 @@
 .python-version
 *.pkl
 *.h5
+cpanfile.snapshot
 .cache/*
-.local/*
+local/*
