@@ -1,6 +1,6 @@
 set fish_greeting
 
-. $HOME/.config/fish/env.fish
-. $HOME/.config/fish/aliases.fish
-. $HOME/.config/fish/key_bindings.fish
-. $HOME/.config_local.fish
+source $HOME/.config/fish/env.fish
+source $HOME/.config/fish/aliases.fish
+source $HOME/.config/fish/key_bindings.fish
+source $HOME/.config_local.fish
