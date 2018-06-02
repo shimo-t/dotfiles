@@ -34,6 +34,9 @@ depends = 'fzf'
 hook_add = 'source ~/.vim/plugins/fzf.vim'
 
 [[plugins]]
+repo = 'dag/vim-fish'
+
+[[plugins]]
 repo = 'dracula/vim'
 hook_add = '''
   autocmd VimEnter * nested colorscheme dracula
