@@ -32,3 +32,11 @@ merged = '0'
 repo = 'junegunn/fzf.vim'
 depends = 'fzf'
 hook_add = 'source ~/.vim/plugins/fzf.vim'
+
+[[plugins]]
+repo = 'dracula/vim'
+hook_add = '''
+  autocmd VimEnter * nested colorscheme dracula
+  autocmd ColorScheme * highlight Normal ctermbg=none
+  syntax enable
+'''
