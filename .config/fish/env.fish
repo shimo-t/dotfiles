@@ -15,6 +15,11 @@ set -gx FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
 set -gx FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
 set -gx FZF_REVERSE_ISEARCH_OPTS '--no-sort'
 
+# anyenv
+set -gx ANYENV_ROOT $HOME/.anyenv
+set -gx PATH $ANYENV_ROOT/bin $PATH
+. (anyenv init - | psub)
+
 # for python
 set -gx PYENV_ROOT $HOME/.pyenv
 set -gx PATH $PYENV_ROOT/bin $PATH
