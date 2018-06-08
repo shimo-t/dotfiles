@@ -46,6 +46,11 @@ if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
 fi
 
+# goenv
+if [ ! -d ~/.pyenv ]; then
+    git clone https://github.com/syndbg/goenv.git $HOME/.goenv
+fi
+
 # plenv
 if [ ! -d ~/.plenv ]; then
     git clone https://github.com/tokuhirom/plenv.git $HOME/.plenv

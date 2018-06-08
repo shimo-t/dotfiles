@@ -25,6 +25,11 @@ set -gx PYENV_ROOT $HOME/.pyenv
 set -gx PATH $PYENV_ROOT/bin $PATH
 . (pyenv init - | psub)
 
+# for golang
+set -gx GOENV_ROOT $HOME/.goenv
+set -gx PATH $GOENV_ROOT/bin $PATH
+. (goenv init - | psub)
+
 # for plenv
 set -gx PLENV_ROOT $HOME/.plenv
 set -gx PATH $PLENV_ROOT/bin $PATH
