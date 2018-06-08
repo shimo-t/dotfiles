@@ -30,6 +30,9 @@ set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
 . (goenv init - | psub)
 
+set -gx GOPATH $HOME/.go
+set -gx PATH $GOPATH/bin $PATH
+
 # for plenv
 set -gx PLENV_ROOT $HOME/.plenv
 set -gx PATH $PLENV_ROOT/bin $PATH
