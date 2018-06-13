@@ -40,5 +40,4 @@ repo = 'dag/vim-fish'
 repo = 'dracula/vim'
 hook_add = '''
   autocmd VimEnter * nested colorscheme dracula
-  autocmd ColorScheme * highlight Normal ctermbg=none
 '''
