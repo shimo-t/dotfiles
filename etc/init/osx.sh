@@ -13,6 +13,7 @@ formulas=(
     coreutils
     tree
     git
+    hub
     tmux
     # peco
     fzf
