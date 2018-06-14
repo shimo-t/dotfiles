@@ -1,4 +1,4 @@
-alias refish '. $HOME/.config/fish/config.fish'
+alias refish 'source $HOME/.config/fish/config.fish'
 
 alias l ls
 alias ll 'ls -la'

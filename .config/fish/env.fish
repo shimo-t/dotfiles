@@ -18,17 +18,17 @@ set -gx FZF_REVERSE_ISEARCH_OPTS '--no-sort'
 # anyenv
 set -gx ANYENV_ROOT $HOME/.anyenv
 set -gx PATH $ANYENV_ROOT/bin $PATH
-. (anyenv init - | psub)
+source (anyenv init - | psub)
 
 # for python
 set -gx PYENV_ROOT $HOME/.pyenv
 set -gx PATH $PYENV_ROOT/bin $PATH
-. (pyenv init - | psub)
+source (pyenv init - | psub)
 
 # for golang
 set -gx GOENV_ROOT $HOME/.goenv
 set -gx PATH $GOENV_ROOT/bin $PATH
-. (goenv init - | psub)
+source (goenv init - | psub)
 
 set -gx GOPATH $HOME/.go
 set -gx PATH $GOPATH/bin $PATH
@@ -36,4 +36,4 @@ set -gx PATH $GOPATH/bin $PATH
 # for plenv
 set -gx PLENV_ROOT $HOME/.plenv
 set -gx PATH $PLENV_ROOT/bin $PATH
-. (plenv init - | psub)
+source (plenv init - | psub)
