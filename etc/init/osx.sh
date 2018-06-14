@@ -37,11 +37,6 @@ if ! which fish > /dev/null 2>&1; then
     echo "fisher install z fzf git_util" | fish
 fi
 
-# anyenv
-if [ ! -d ~/.anyenv ]; then
-    git clone https://github.com/riywo/anyenv.git $HOME/.anyenv
-fi
-
 # pyenv
 if [ ! -d ~/.pyenv ]; then
     git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
