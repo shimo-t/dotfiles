@@ -26,6 +26,7 @@ function __just_a_dollar
   end
 end
 
+# TODO: DONOT call directly agnoster function
 function __agnoster
   function fish_prompt
     set -g RETVAL $status
