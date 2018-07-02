@@ -25,3 +25,4 @@
   cancel = reset --soft HEAD^
   unstage = reset HEAD --
   up = pull --rebase --autostash
+  mergenono = merge --no-ff --no-commit
