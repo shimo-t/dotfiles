@@ -17,8 +17,10 @@
   dc = diff --cached
   ds = diff --staged
   dh = diff HEAD^ HEAD
-  wd = diff --word-diff --ignore-all-space
-  wdc = diff --word-diff --ignore-all-space --cached
+  dw = diff --word-diff --ignore-all-space
+  dwc = diff --word-diff --ignore-all-space --cached
+  dws = diff --word-diff --ignore-all-space --staged
+  dwh = diff --word-diff --ignore-all-space HEAD^ HEAD
   l = log --decorate --oneline
   ls = log --decorate --oneline --stat
   lg = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
