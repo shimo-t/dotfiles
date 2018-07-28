@@ -12,6 +12,7 @@
   st = status
   ci = commit
   br = branch
+  bry = !git symbolic-ref --short HEAD | perl -pe 'chomp' | pbcopy
   co = checkout
   d = diff
   dc = diff --cached
