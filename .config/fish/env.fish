@@ -32,3 +32,7 @@ set -gx PATH $GOPATH/bin $PATH
 set -gx PLENV_ROOT $HOME/.plenv
 set -gx PATH $PLENV_ROOT/bin $PATH
 source (plenv init - | psub)
+
+# for nodebrew
+set -gx NODEBREW_ROOT $HOME/.nodebrew/current
+set -gx PATH $NODEBREW_ROOT/bin $PATH
