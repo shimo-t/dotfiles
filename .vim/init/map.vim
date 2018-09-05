@@ -7,6 +7,11 @@ inoremap jj <Esc>
 inoremap <C-j> <Esc>
 vnoremap <C-j> <ESC>
 
+noremap j gj
+noremap k gk
+noremap gj j
+noremap gk k
+
 inoremap { {}<Left>
 inoremap [ []<Left>
 inoremap ( ()<Left>
