@@ -53,3 +53,11 @@ function theme -d "Switch fish theme."
       echo "$argv[1] doesn't exist."
   end
 end
+
+function gitco -d "Git checkout with fzf"
+  if count $argv > /dev/null
+    git checkout (git branch | fzf -1 +s -q $argv[1] | tr -d ' ' | tr -d '*')
+  else
+    git checkout (git branch | fzf | tr -d ' ' | tr -d '*')
+  end
+end
