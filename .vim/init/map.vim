@@ -53,3 +53,6 @@ nnoremap sn gt
 nnoremap sp gT
 nnoremap st :<C-u>tabnew<CR>
 nnoremap sq :<C-u>q<CR>
+
+" ctags
+map <leader>o :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
