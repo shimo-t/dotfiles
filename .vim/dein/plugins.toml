@@ -10,6 +10,9 @@ repo = 'tyru/caw.vim'
 hook_add = 'source ~/.vim/plugins/caw.vim'
 
 [[plugins]]
+repo = 'mechatroner/rainbow_csv'
+
+[[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
