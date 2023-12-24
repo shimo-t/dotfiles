@@ -23,7 +23,7 @@ init: ## Setup environment settings
 	@echo '==> Start to initialize dotfiles.'
 	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh
 
-install: deploy init ## Run make deploy, init
+install: deploy init ## Run make deploy & init
 
 clean: ## Remove the dotfiles and this repo
 	@echo 'Remove dotfiles in your home directory...'
