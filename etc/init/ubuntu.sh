@@ -60,6 +60,11 @@ if [ ! -d ~/.asdf ]; then
     mkdir -p $HOME/.config/fish/completions; and ln -s $HOME/.asdf/completions/asdf.fish $HOME/.config/fish/completions
 fi
 
+# tpm
+if [ ! -d ~/.tmux/plugins/tpm ]; then
+    git clone https://github.com/tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+fi
+
 # powerline
 # if ! which powerline-daemon > /dev/null 2>&1; then
 #     pyenv install miniconda2-4.1.11
