@@ -37,19 +37,10 @@ if ! which fish > /dev/null 2>&1; then
     echo "fisher install z fzf git_util" | fish
 fi
 
-# pyenv
-if [ ! -d ~/.pyenv ]; then
-    git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
-fi
-
-# goenv
-if [ ! -d ~/.pyenv ]; then
-    git clone https://github.com/syndbg/goenv.git $HOME/.goenv
-fi
-
-# plenv
-if [ ! -d ~/.plenv ]; then
-    git clone https://github.com/tokuhirom/plenv.git $HOME/.plenv
+# asdf
+if [ ! -d ~/.asdf ]; then
+    git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.13.1
+    mkdir -p $HOME/.config/fish/completions; and ln -s $HOME/.asdf/completions/asdf.fish $HOME/.config/fish/completions
 fi
 
 # powerline

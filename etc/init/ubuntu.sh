@@ -54,9 +54,10 @@ if ! which fish > /dev/null 2>&1; then
     echo "fisher install jethrokuan/fzf jethrokuan/z oh-my-fish/theme-bobthefish" | fish
 fi
 
-# pyenv
-if [ ! -d ~/.pyenv ]; then
-    git clone https://github.com/pyenv/pyenv.git $HOME/.pyenv
+# asdf
+if [ ! -d ~/.asdf ]; then
+    git clone https://github.com/asdf-vm/asdf.git $HOME/.asdf --branch v0.13.1
+    mkdir -p $HOME/.config/fish/completions; and ln -s $HOME/.asdf/completions/asdf.fish $HOME/.config/fish/completions
 fi
 
 # powerline
