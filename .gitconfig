@@ -1,5 +1,6 @@
 [user]
   name = Takahisa Shimoda
+  email = shimo.t.122@gmail.com
 
 [core]
   excludesfile = ~/.gitignore_global
