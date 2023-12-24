@@ -19,3 +19,6 @@ set -gx FZF_REVERSE_ISEARCH_OPTS '--no-sort'
 
 # for asdf
 source $HOME/.asdf/asdf.fish
+
+# ssh-agent
+eval (ssh-agent -c)
