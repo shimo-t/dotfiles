@@ -10,11 +10,11 @@ if ! which git > /dev/null 2>&1; then
 fi
 
 # dracula colorscheme for gnome terminal
-if [ ! -d  ~/.dir_colors ]; then
-    git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula $HOME/gnome-terminal-colors-dracula
-    $HOME/gnome-terminal-colors-dracula/install.sh
-    rm -rf $HOME/gnome-terminal-colors-dracula
-fi
+# if [ ! -d  ~/.dir_colors ]; then
+#     git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula $HOME/gnome-terminal-colors-dracula
+#     $HOME/gnome-terminal-colors-dracula/install.sh
+#     rm -rf $HOME/gnome-terminal-colors-dracula
+# fi
 
 # golang
 if ! which go > /dev/null 2>&1; then
@@ -29,6 +29,11 @@ fi
 # ag
 if ! which ag > /dev/null 2>&1; then
     sudo apt install silversearcher-ag
+fi
+
+# rg
+if ! which ag > /dev/null 2>&1; then
+    sudo apt install ripgrep
 fi
 
 # tmux
@@ -46,7 +51,7 @@ fi
 if ! which fish > /dev/null 2>&1; then
     sudo apt install fish
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher install z omf/theme-agnoster" | fish
+    echo "fisher install jethrokuan/fzf jethrokuan/z oh-my-fish/theme-bobthefish" | fish
 fi
 
 # pyenv
@@ -55,12 +60,12 @@ if [ ! -d ~/.pyenv ]; then
 fi
 
 # powerline
-if ! which powerline-daemon > /dev/null 2>&1; then
-    pyenv install miniconda2-4.1.11
-    pyenv global miniconda2-4.1.11
-    pip install --user powerline-status
-
-    git clone https://github.com/powerline/fonts.git $HOME/fonts
-    $HOME/fonts/install.sh
-    rm -rf $HOME/fonts
-fi
+# if ! which powerline-daemon > /dev/null 2>&1; then
+#     pyenv install miniconda2-4.1.11
+#     pyenv global miniconda2-4.1.11
+#     pip install --user powerline-status
+#
+#     git clone https://github.com/powerline/fonts.git $HOME/fonts
+#     $HOME/fonts/install.sh
+#     rm -rf $HOME/fonts
+# fi
