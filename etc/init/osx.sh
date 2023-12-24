@@ -18,7 +18,7 @@ formulas=(
     # peco
     fzf
     ffmpeg
-    the_silver_searcher
+    ripgrep
     reattach-to-user-namespace
     perl-build
 )
