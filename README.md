@@ -17,6 +17,10 @@ clean                          Remove the dotfiles and this repo
 deploy                         Create symlink to home directory
 help                           Self-documented Makefile
 init                           Setup environment settings
-install                        Run make deploy, init
+install                        Run make deploy & init
 list                           Show dotfiles in this repo
+```
+
+```
+$ make install
 ```
