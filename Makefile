@@ -21,7 +21,7 @@ deploy: ## Create symlink to home directory
 
 init: ## Setup environment settings
 	@echo '==> Start to initialize dotfiles.'
-	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/etc/init/init.sh
+	@DOTPATH=$(DOTPATH) bash $(DOTPATH)/bin/init.sh
 
 install: deploy init ## Run make deploy & init
 
