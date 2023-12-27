@@ -8,14 +8,18 @@ set -gx LC_COLLATE en_US.UTF-8
 set -gx LC_MONETARY en_US.UTF-8
 set -gx LC_MESSAGES en_US.UTF-8
 
-set -g theme_color_scheme dracula
+set -gx theme_color_scheme dracula
+
+# for bat
+set -gx BAT_CONFIG_PATH $HOME/.bat.conf
 
 # for fzf
-set -gx FZF_DEFAULT_OPTS '--height 50% --reverse'
-set -gx FZF_DEFAULT_COMMAND 'rg --files --hidden --follow --glob "!.git/*"'
-# set -gx FZF_DEFAULT_COMMAND 'ag --hidden --ignore .git -g ""'
-set -gx FZF_FIND_FILE_COMMAND $FZF_DEFAULT_COMMAND
-set -gx FZF_REVERSE_ISEARCH_OPTS '--no-sort'
+set -gx FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --preview "fzf-preview.sh {} 2> /dev/null || ls {}" --marker="*"'
+set -gx FZF_DEFAULT_COMMAND 'fd --hidden'
+
+# for PatrickF1/fzf.fish
+fzf_configure_bindings --directory=\co --git_status=\cs
+set -gx fzf_fd_opts --hidden
 
 # for asdf
 source $HOME/.asdf/asdf.fish

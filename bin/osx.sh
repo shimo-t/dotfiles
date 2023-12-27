@@ -21,6 +21,8 @@ formulas=(
     ripgrep
     reattach-to-user-namespace
     perl-build
+    fd
+    bat
 )
 
 for formula in "${formulas[@]}"; do
@@ -34,7 +36,7 @@ if ! which fish > /dev/null 2>&1; then
     brew install fish
 
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher install z fzf git_util" | fish
+    echo "fisher install PatrickF1/fzf.fish jethrokuan/z oh-my-fish/theme-bobthefish" | fish
 fi
 
 # asdf

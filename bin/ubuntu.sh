@@ -36,6 +36,27 @@ if ! which ag > /dev/null 2>&1; then
     sudo apt install ripgrep
 fi
 
+# fzf
+if ! which fzf > /dev/null 2>&1; then
+    # sudo apt install fzf
+    # install manually for latest version
+    git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
+    $HOME/.fzf/install
+    ln -s $HOME/.fzf/bin/* $HOME/.local/bin/
+fi
+
+# fd
+if ! which fd > /dev/null 2>&1; then
+    sudo apt install fd-find
+    ln -s $(which fdfind) $HOME/.local/bin/fd
+fi
+
+# bat
+if ! which bat > /dev/null 2>&1; then
+    sudo apt install bat
+    ln -s $(which batcat) $HOME/.local/bin/bat
+fi
+
 # tmux
 if ! which tmux > /dev/null 2>&1; then
     sudo apt install tmux
@@ -51,7 +72,7 @@ fi
 if ! which fish > /dev/null 2>&1; then
     sudo apt install fish
     curl -Lo $HOME/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
-    echo "fisher install jethrokuan/fzf jethrokuan/z oh-my-fish/theme-bobthefish" | fish
+    echo "fisher install PatrickF1/fzf.fish jethrokuan/z oh-my-fish/theme-bobthefish" | fish
 fi
 
 # asdf
