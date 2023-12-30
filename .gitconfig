@@ -6,6 +6,9 @@
   excludesfile = ~/.gitignore_global
   editor = vim -c \"set fenc=utf-8\"
 
+[init]
+  defaultBranch = main
+
 [alias]
   al = config --get-regexp alias
   me = config --get-regexp user
