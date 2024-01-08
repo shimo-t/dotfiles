@@ -36,3 +36,6 @@
   unstage = reset HEAD --
   up = pull --rebase --autostash
   mergenono = merge --no-ff --no-commit
+
+[commit]
+  verbose = true
