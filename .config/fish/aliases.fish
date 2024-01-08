@@ -4,6 +4,8 @@ alias l ls
 alias ll 'ls -la'
 alias la 'ls -A'
 
+alias rg 'rg --hidden --glob=!.git/'
+
 function vimf
   if count $argv > /dev/null
     fzf -1 -q $argv[1] | xargs -o vim
