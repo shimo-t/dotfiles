@@ -1,0 +1,117 @@
+{
+    "workbench.colorTheme": "Dracula",
+  
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+      },
+    ],
+  
+    //nnoremap
+    "vim.normalModeKeyBindingsNonRecursive": [
+      { "before": ["J"], "after": ["1", "0", "j"] }, //移動を早める
+      { "before": ["K"], "after": ["1", "0", "k"] }, //移動を早める
+      { "before": ["H"], "after": ["0"] }, //端に移動
+      { "before": ["L"], "after": ["$"] }, //端に移動
+      // { "before": ["<Leader>", "h"], "after": ["<C-w>", "h"] }, //window移動
+      // { "before": ["<Leader>", "j"], "after": ["<C-w>", "j"] }, //window移動
+      // { "before": ["<Leader>", "k"], "after": ["<C-w>", "k"] }, //window移動
+      // { "before": ["<Leader>", "l"], "after": ["<C-w>", "l"] }, //window移動
+      // コマンド (cmd + shift + p)
+      {
+        "before": ["<Leader>", ":"],
+        "commands": [{ "command": "workbench.action.showCommands" }]
+      },
+      //コマンドパレット (cmd + p)
+      {
+        "before": ["<Leader>", ";"],
+        "commands": [{ "command": "workbench.action.quickOpen" }]
+      },
+      //easy motion
+      { "before": ["f"], "after": ["<Leader>", "<Leader>", "2", "s"] }, //easymotion 2s
+    ],
+  
+    "files.insertFinalNewline": true,
+  
+    // cf. https://qiita.com/y-mattun/items/45776b7e1942edb2f727
+    //----------------------------------------------------------
+    // vscodeのeditorの設定
+    //----------------------------------------------------------
+    "editor.fontSize": 13, // フォントサイズ
+    "editor.wordWrap": "off", // コードの一行が長くなるための可読性向上
+    "editor.minimap.enabled": true, // ミニマップはいらない
+    "editor.insertSpaces": false, // tab キーを押すとスペースが挿入されます。
+    "editor.tabSize": 2, // tabをデフォルトで2スペースにする
+    "editor.renderWhitespace": "boundary", // エディターで空白文字を表示する方法を制御します。'none'、'boundary' および 'all' が使用可能です。'boundary' オプションでは、単語間の単一スペースは表示されません。
+    "editor.formatOnSave": false, // 時間のかかるフォーマットだとバグが出るのでfalse
+    "breadcrumbs.enabled": true, // エディターで開くパンくずの設定
+    // "editor.fontFamily": "Cica, Consolas, 'Courier New', monospace", //font settings
+    "editor.scrollBeyondLastLine": false,
+  
+    //サジェスチョン
+    "editor.quickSuggestionsDelay": 10, // 入力補完の検出タイミング
+  
+    "editor.quickSuggestions": {
+      // 入力補完を自動で表示する
+      "other": true, // 文字列以外
+      "strings": false, // 文字列
+      "comments": false // コメント
+    },
+  
+    //----------------------------------------------------------
+    // vscode vimの設定
+    //----------------------------------------------------------
+    "vim.easymotion": true, // 検索をするときに見やすいモッサりすることなければこのまま
+    "vim.surround": true, //surroundを有効にする
+    "vim.ignorecase": true, // ignore case in search patterns.
+    "vim.incsearch": true, // show where a / search matches as you type it.
+    "vim.sneak": true, // enable the sneak plugin for vim.
+    "vim.statusBarColorControl": false, //statusbarの色のコントロールをしない
+    "vim.highlightedyank.enable": true, //yankした箇所をハイライト表示にする
+    "vim.highlightedyank.color": "rgba(0, 240, 170, 0.5)", //yankした時の色
+    "vim.highlightedyank.duration": 150, //yankした時の色の表示時間
+    "vim.leader": "<space>", //Map Leaderの設定
+    "vim.autoindent": true, //autoindent
+    "vim.useSystemClipboard": true, //system clipboardと同期する
+    "vim.hlsearch": true, //hlserch
+    "vim.visualstar": true, //カーソル上にあるワードを"*"で検索
+    "vim.useCtrlKeys": true, //諸々のctrlキーを使った操作が有効になる
+    "vim.debug.silent": true, //アラートを出さない
+    "vim.timeout": 1200, //入力のタイムアウト時間
+  
+    //easy motion
+    "vim.easymotionMarkerForegroundColorOneChar": "rgba(0,240,170,0.9)", //一文字目の色
+    "vim.easymotionMarkerForegroundColorTwoChar": "rgba(0,240,170,0.9)", //二文字目の色
+    "vim.easymotionMarkerBackgroundColor": "", //背景色
+    "vim.easymotionMarkerWidthPerChar": 19, //各文字に割り当てられている幅
+    "vim.easymotionMarkerHeight": 0, //マーカーの高さ
+    // "vim.easymotionMarkerFontFamily": "Cica", //フォント
+    "vim.easymotionMarkerFontSize": "12.5", //フォントサイズ
+    "vim.easymotionMarkerFontWeight": "normal", //フォントの太さ
+    "vim.easymotionKeys": "asdfhjklwqeruioopghty;", //マーカーに使用される文字列
+    "vim.easymotionMarkerYOffset": 13.5, //高さのずれ修正
+  
+    //----------------------------------------------------------
+    // cssの設定
+    //----------------------------------------------------------
+    "css.lint.float": "error", // 'float' の使用を避けてください。float は脆弱な css につながり、レイアウトの一部が変更されたときに css が破損しやすくなります。
+    "css.lint.propertyIgnoredDueToDisplay": "error", // display によってプロパティを無視します。例: 'display: inline' の場合、width、height、margin-top、margin-bottom、float プロパティには効果がありません。
+    "css.lint.universalSelector": "error", // ユニバーサル セレクター (*) を使用すると処理速度が低下することが分かっています
+    "css.lint.boxModel": "error", // widthとheightをいっしょに使用しない
+    "css.lint.duplicateProperties": "error", // 重複する属性の使用不可
+    "css.lint.idSelector": "error",
+  
+    "explorer.confirmDragAndDrop": false,
+    "glassit.alpha": 180,
+    "window.titleBarStyle": "custom", // id属性にはcssをつけない
+  
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true
+    },
+    "workbench.activityBar.location": "hidden",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "hediet.vscode-drawio.resizeImages": null
+  }
+  
